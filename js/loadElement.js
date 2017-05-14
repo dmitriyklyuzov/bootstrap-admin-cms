@@ -1,4 +1,5 @@
 function loadElement(tableName){
+
 	if(tableName=='users'){
 		$('#main-panel-heading').html('Users');
 		$('#main-panel-body').load('parts/users.html');
