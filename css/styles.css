@@ -57,6 +57,17 @@ body{
 	border: 0px !important;
 }
 
+.footer{
+	/*position: absolute;*/
+	bottom: 0px;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background: #fff;
+	text-align: center;
+	
+}
+
 /* Colors */
 .background-primary{
 	background-color: #337ab7;
