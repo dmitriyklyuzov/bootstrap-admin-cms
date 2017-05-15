@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <script src="https://cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
   </head>
@@ -242,6 +243,54 @@
       </div>
     </div>
 
+    <!-- Edit post -->
+    <!-- This is the same modal as "Add post". In production, use the same modal for both "Add" and "Edit", entering values based on the element -->
+    <div class="modal fade" id="editPostModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form action="">
+          
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Edit your post</h4>
+            </div>
+            <div class="modal-body">
+
+              <div class="form-group">
+                <label>Post Title</label>
+                <input type="text" class="form-control" value="The Hound of Baskervilles">  
+              </div>
+              
+              <div class="form-group">
+                <label>Post Body</label>
+                <textarea name="post-editor" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi et rerum ipsam tempore tenetur quos, tempora, magnam repudiandae repellendus nemo ab officiis dolorem in minus fuga aut quod saepe error.
+                </textarea>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" checked="true"> Published
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label>Topics</label>
+                <br>
+                <input type="checkbox" checked="true"> Drama &nbsp;
+                <input type="checkbox"> Comedy &nbsp;
+                <input type="checkbox"> Horror
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- Add user -->
     <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
@@ -263,7 +312,7 @@
 
     <!-- Bootstrap core JavaScript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/loadElement.js"></script>
     <script>
 
